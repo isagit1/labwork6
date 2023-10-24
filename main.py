@@ -33,6 +33,7 @@ def main():
             print("Your password has been encoded and stored!")
             print()
         if choice==2:
+            x=decode(s)
             print(f"The encoded password is {x}, and the original password is {orig}.")
         if choice==3:
             break
