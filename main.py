@@ -15,6 +15,14 @@ def encode(s):
     return s
 
 
+def decode(s):
+    result = ''
+    for digit in s:
+        new_digit = str((int(digit) - 3) % 10)
+        result += new_digit
+    return result
+
+
 def main():
     while True:
         print("Menu")
@@ -36,6 +44,7 @@ def main():
             print(f"The encoded password is {s}, and the original password is {orig}.")
         if choice==3:
             break
+
 
 if __name__ == "__main__":
     main()
